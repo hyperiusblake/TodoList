@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    tools:context=".MainActivity">
+<!--removed android:background as it replaced the entire Drawable and removed click effects-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/title"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:hint="@string/add_an_item"
+        android:inputType="text"
+        android:padding="20dp"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:orientation="horizontal"
+        android:layout_below="@id/editText"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/add"
+            android:name="add"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="@string/delete" />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:layout_marginStart="60dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_below="@id/linearLayout1"
+        android:text="@string/my_to_do_list"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView1"
+        android:choiceMode="multipleChoice" />
+
+    <Switch
+        android:id="@+id/darkmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:minHeight="48dp"
+        android:text="@string/darkmode" />
+
+</RelativeLayout>
