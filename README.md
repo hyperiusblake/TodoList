@@ -1,9 +1,6 @@
 # To-Do List
-> An app that keeps track of upcoming tasks to complete.
+> This app is a side project to help increase my understanding of RecyclerView in Android Studio.
 
-This app is a project to help increase my understanding of RecyclerView in Android Studio.
-
-![](header.PNG)
 
 ## Release History
 
@@ -13,8 +10,6 @@ This app is a project to help increase my understanding of RecyclerView in Andro
 ## Meta
 
 Robin Blake – [@hyperiusblake](https://medium.com/hyperiusblake) – robindeanblake@gmail.com
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
 
 ## Contributing
 
